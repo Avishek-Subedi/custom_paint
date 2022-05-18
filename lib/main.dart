@@ -1,5 +1,6 @@
 import 'package:custom_paint/pages/line_paint_page.dart';
 import 'package:custom_paint/pages/rectangle_paint_page.dart';
+import 'package:custom_paint/pages/widgets/draw_image.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class CustomPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Title'),
       ),
-      body: Rectangle(),
+      body: ImagePaintPage(),
     );
   }
 }

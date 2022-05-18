@@ -7,12 +7,14 @@ class Rectangle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-          height: 300,
-          color: Colors.white,
-          width: 300,
-          child: CustomPaint(
-            painter: RPainter(),
-          )),
+        height: 300,
+        width: 300,
+        color: Colors.white,
+        child: CustomPaint(
+          painter: RPainter(),
+          // child: Text("Custom  Paint "),
+        ),
+      ),
     );
   }
 }
@@ -28,8 +30,8 @@ class RPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    final a = Offset(size.width * 1 / 4, size.height * 1 / 4);
-    final b = Offset(size.width * 3 / 4, size.height * 3 / 4);
+    final a = Offset(size.width * 1 / 6, size.height * 1 / 4);
+    final b = Offset(size.width * 5 / 6, size.height * 3 / 4);
 
     final rect = Rect.fromPoints(a, b);
 
